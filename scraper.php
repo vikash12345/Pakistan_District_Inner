@@ -22,7 +22,7 @@ for($id = 0; $id <= 0; $id++)
 				for($url = 0; $url <= sizeof($info['urlbutton']); $url++){
 				echo (array_values($info['urlbutton']);
 					
-					(array_values($info['urlbutton'])
+					
 	    }
 		 
 	}
