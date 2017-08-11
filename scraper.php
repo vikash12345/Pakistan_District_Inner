@@ -20,7 +20,9 @@ for($id = 0; $id <= 0; $id++)
 	{
 		 $info['urlbutton'] = $href->value;
 				for($url = 0; $url <= sizeof($info['urlbutton']); $url++){
-				echo $info['urlbutton']$url;
+				echo (array_values($info['urlbutton']);
+					
+					(array_values($info['urlbutton'])
 	    }
 		 
 	}
