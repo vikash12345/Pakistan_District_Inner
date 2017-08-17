@@ -10,21 +10,13 @@ for($id = 0; $id <= 0; $id++)
   foreach($link2->find("//*[@id='w0']/table/tbody/tr")as $element){
 		if(is_object($element))
 	{
-	 	$info['num'] 		= $element->find("td", 0)->plaintext;
-		$info['courtname']  	= $element->find("td", 1)->plaintext;
-		$info['caseno']  	= $element->find("td", 2)->plaintext;
-		$info['status']  	= $element->find("td", 3)->plaintext;
-		$href 			= $element->find(".//td/button", 0);
+	 	echo $info['num'] 		= $element->find("td", 0)->plaintext;
+		echo $info['courtname']  	= $element->find("td", 1)->plaintext;
+		echo $info['caseno']  		= $element->find("td", 2)->plaintext;
+		echo $info['status']  		= $element->find("td", 3)->plaintext;
+		echo $href 			= $element->find(".//td/button", 0);
 			
-			if(is_object($href))
-	{
-		 $info['urlbutton'] = $href->value;
-				for($url = 0; $url <= sizeof($info['urlbutton']); $url++){
-				echo $url;
-					
-					
-	    }
-		 
+				 
 	}
       
       
