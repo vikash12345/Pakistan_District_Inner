@@ -20,7 +20,7 @@ for($id = 0; $id <= 0; $id++)
 	}
       
       
-		}
+		}}
 	  
 	  
 // scraperwiki::save_sqlite(array('num'), array('num' => $info['num'],'courtname' => $info['courtname'],'caseno' => $info['caseno'],'status' => $info['status'],'urlbutton' => $info['urlbutton'] ));
