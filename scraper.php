@@ -16,8 +16,8 @@ for($id = 0; $id <= 0; $id++)
 		 $info['status']  		= $element->find("td", 3)->plaintext;
 		echo $href 			= $element->find(".//td/button", 0);
 			if($href){
-			  $href = $btn->onclick;
-    				echo $href;
+			  $link = $href->onclick;
+    				echo $link;
 			}
 				 
 	}
