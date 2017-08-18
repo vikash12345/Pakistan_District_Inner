@@ -36,7 +36,7 @@ foreach($html->find("//*[@id='w0']/table/tbody/tr") as $element)
 			  
 			
 			
-				echo $innerurl = file_get_html($localvar);
+				echo $innerurl = file_get_content($localvar);
 				
 			
 		 
