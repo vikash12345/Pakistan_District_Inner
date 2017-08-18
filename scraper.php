@@ -10,12 +10,15 @@ for($id = 0; $id <= 0; $id++)
   foreach($link2->find("//*[@id='w0']/table/tbody/tr")as $element){
 		if(is_object($element))
 	{
-	 	echo $info['num'] 		= $element->find("td", 0)->plaintext;
-		echo $info['courtname']  	= $element->find("td", 1)->plaintext;
-		echo $info['caseno']  		= $element->find("td", 2)->plaintext;
-		echo $info['status']  		= $element->find("td", 3)->plaintext;
-		echo $href 			= $element->find(".//td/button", 0);
-			
+	 	 $info['num'] 		= $element->find("td", 0)->plaintext;
+		 $info['courtname']  	= $element->find("td", 1)->plaintext;
+		 $info['caseno']  		= $element->find("td", 2)->plaintext;
+		 $info['status']  		= $element->find("td", 3)->plaintext;
+		echo "$href...\n" 			= $element->find(".//td/button", 0);
+			if($href){
+			  $href = $btn->onclick;
+    				echo $href;
+			}
 				 
 	}
       
