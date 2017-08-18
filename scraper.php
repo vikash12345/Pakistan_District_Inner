@@ -32,11 +32,10 @@ foreach($html->find("//*[@id='w0']/table/tbody/tr") as $element)
 	{
 		 $urlbutton = $href->value;
 			
-			 $localvar = 'http://202.61.43.40:8080/' . $urlbutton;
+			 $localvar = file_get_html('http://202.61.43.40:8080/' . $urlbutton);
 			  
 			
 			
-				echo $innerurl = file_get_html($localvar);
 				
 			
 		 
