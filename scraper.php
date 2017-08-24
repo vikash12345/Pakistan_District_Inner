@@ -8,6 +8,7 @@ for($i = 0; $i > 3; $i++)
 	{
 		$Page = $SiteURL . $i;
 	$html = file_get_html($Page);
+	echo $html;
 	}
 
 
