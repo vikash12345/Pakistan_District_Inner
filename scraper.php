@@ -9,23 +9,7 @@ require 'scraperwiki/simple_html_dom.php';
 
 		$FinalURL	=	$SiteURL . $PageLoop;
 		$Html		=	file_get_html($FinalURL);
-		$RowNumb	=	-1;
-
-		if ($Html) {
-
-			//	Paginate all 'View' buttons
-			foreach ($Html->find("//div[@id='w0']/table[contains(@class,'table-striped')]/tbody/tr") as $element) {
-				$RowNumb	+=	1;
-				if ($RowNumb != 0) {
-					echo $CourtName	=	$element->find('./td[2]', 0);
-					$CaseNumbr	=	$element->find('./td[3]', 0);
-					$CaseStats	=	$element->find('./td[4]', 0);
-					$CaseValue	=	$element->find('./td[5]/button', 0);
-					$CaseLinkR	=	$BaseLink . $CaseValue->attr['value'];
-					$CaseLink	=	str_replace("amp;", "", $CaseLinkR);
-					
-					
-
-				}}}}
+		echo $html;
+		}
 
 ?>
